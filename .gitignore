@@ -1,7 +1,0 @@
-# Ignorar todo dentro de la carpeta MDK-ARM
-/IDNG-64-v4-Application/Project/Peripheral_Examples/root/MDK-ARM/*
-
-# No ignorar archivos con extensión .uvprojx dentro de MDK-ARM
-!/IDNG-64-v4-Application/Project/Peripheral_Examples/root/MDK-ARM/**/*.uvprojx
-
-/IDNG-64-v4-Application/Project/Peripheral_Examples/root/MDK-ARM
