@@ -1,0 +1,1145 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: µVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: Ivan Garcia, Normagroup, LIC=YUURY-IYVGK-1F90S-ZZ2S5-3FT8E-5CIH8
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Cortex-M0/M0+ for ST  Version: 5.39.0.0
+Toolchain Path:  C:\Keil_v5\ARM\5.06\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DARMCM1.DLL V1.19.6.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TARMCM1.DLL V1.14.6.0
+ 
+<h2>Project:</h2>
+C:\Users\i.garcia\Documents\IDNG-64-v4-Application\IDNG-64-v4-Application\Project\Peripheral_Examples\root\MDK-ARM\IO_Toggle.uvprojx
+Project File Date:  09/13/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'C:\Keil_v5\ARM\5.06\Bin'
+Rebuild target 'IO_Toggle'
+compiling socket.c...
+compiling w5100.c...
+compiling dali.c...
+..\polling.h(9): warning:  #1-D: last line of file ends without a newline
+  void pollingRst (void);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\dali.c(284): warning:  #223-D: function "daliBufferTransceiverSend" declared implicitly
+  						daliBufferTransceiverSend(_daliBufferFrameType[n], packetId, &_daliBufferDestArray[0], &_daliBufferCom[0]);		
+..\dali.c(345): warning:  #223-D: function "polling_BusyClear" declared implicitly
+  												polling_BusyClear();
+..\dali.c(388): warning:  #223-D: function "polling_DaliNotifyCb" declared implicitly
+  											polling_DaliNotifyCb(_daliSentSenderPacketId[n],_daliSentFrameType[n],_daliSentDest[n],&_daliSentApply[n][0],_daliSentCommandHigh[n],_daliSentCommandLow[n],frameType,valid,&validArray[0],answer,&answerArray[0],sensorAddress);	
+..\dali.c: 5 warnings, 0 errors
+compiling daliLoop.c...
+..\daliLoop.c(710): warning:  #223-D: function "historicoTest_ProcesaEstaEmergencia" declared implicitly
+  					historicoTest_ProcesaEstaEmergencia(n,daliLoopEmergencyStatus[n]);
+..\daliLoop.c(761): warning:  #223-D: function "ethSendFrame" declared implicitly
+  		ethSendFrame(0,&respuesta[0],75,&_broadcastAddress[0], 2234);		
+..\daliLoop.c(772): warning:  #223-D: function "sensoresGruposReguladoresLuzEstadoActualizar" declared implicitly
+  		sensoresGruposReguladoresLuzEstadoActualizar (0xFFFF);				// Aquí hay que llamar a actualizar todos los grupos de reguladores de luz.
+..\daliLoop.c(792): warning:  #223-D: function "ethSendFrame" declared implicitly
+  		ethSendFrame(0,&respuesta[0],75,&_broadcastAddress[0], 2234);	
+..\daliLoop.c(735): warning:  #177-D: variable "ip"  was declared but never referenced
+  	unsigned char ip[4];
+..\daliLoop.c: 5 warnings, 0 errors
+compiling daliAddressing.c...
+..\daliAddressing.c(37): warning:  #47-D: incompatible redefinition of macro "BOOL"  (declared at line 11 of "..\dataTypes.h")
+  #define BOOL                unsigned char
+..\daliAddressing.c(137): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(175): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(204): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(233): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(264): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(295): warning:  #223-D: function "sysTickDelay" declared implicitly
+  						sysTickDelay (10);																		
+..\daliAddressing.c(334): warning:  #223-D: function "sysTickDelay" declared implicitly
+  						sysTickDelay (10);
+..\daliAddressing.c(363): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(392): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(421): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(567): warning:  #223-D: function "sysTickDelay" declared implicitly
+  							sysTickDelay (10);
+..\daliAddressing.c(676): warning:  #177-D: variable "n"  was declared but never referenced
+          unsigned char n;
+..\daliAddressing.c(688): warning:  #177-D: variable "n"  was declared but never referenced
+          unsigned char n;
+..\daliAddressing.c(731): warning:  #223-D: function "ethSendFrame" declared implicitly
+  		ethSendFrame(0,&respuesta[0],10,&_ipA[0], 2234);			
+..\daliAddressing.c(714): warning:  #177-D: variable "ipDebug"  was declared but never referenced
+  	unsigned char ipDebug[4]={192,168,51,246};
+..\daliAddressing.c(758): warning:  #223-D: function "ethSendFrame" declared implicitly
+  		ethSendFrame(0,&respuesta[0],10,&ipDebug[0], 2235);		
+..\daliAddressing.c(1108): warning:  #223-D: function "dASEStart" declared implicitly
+  					if (dASEStart()==0x01)
+..\daliAddressing.c(1139): warning:  #223-D: function "dANIStart" declared implicitly
+  					if (dANIStart()==0x01)
+..\daliAddressing.c(1155): warning:  #223-D: function "dASEDoTask" declared implicitly
+  					dASEDoTask();
+..\daliAddressing.c(1156): warning:  #223-D: function "dANIDoTask" declared implicitly
+  					dANIDoTask();
+..\daliAddressing.c(1159): warning:  #223-D: function "dAPSADoTask" declared implicitly
+  					dAPSADoTask();					
+..\daliAddressing.c(1160): warning:  #223-D: function "dADSADoTask" declared implicitly
+  					dADSADoTask();	
+..\daliAddressing.c(1161): warning:  #223-D: function "dALSDoTask" declared implicitly
+  					dALSDoTask();
+..\daliAddressing.c(1162): warning:  #223-D: function "dAQDTLDoTask" declared implicitly
+  					dAQDTLDoTask();
+..\daliAddressing.c(89): warning:  #177-D: function "dASRAGotoStage"  was declared but never referenced
+  				static void	dASRAGotoStage (unsigned char stage);
+..\daliAddressing.c: 26 warnings, 0 errors
+compiling main.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\polling.h(9): warning:  #1-D: last line of file ends without a newline
+  void pollingRst (void);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\main.c(116): warning:  #223-D: function "embeddedBootloaderInit" declared implicitly
+  	embeddedBootloaderInit();
+..\main.c(123): warning:  #223-D: function "sensoresInit" declared implicitly
+  	sensoresInit();	
+..\main.c(124): warning:  #223-D: function "eBootloaderTransceiver_Check" declared implicitly
+  	eBootloaderTransceiver_Check();	
+..\main.c(125): warning:  #223-D: function "circInit" declared implicitly
+  	circInit();
+..\main.c(135): warning:  #223-D: function "polling_DoTask" declared implicitly
+  		polling_DoTask();		
+..\main.c(136): warning:  #223-D: function "botoneraDoTask" declared implicitly
+  		botoneraDoTask();
+..\main.c(137): warning:  #223-D: function "ethICMPDoTask" declared implicitly
+  		ethICMPDoTask();	
+..\main.c(143): warning:  #223-D: function "sensoresDoTask" declared implicitly
+  		sensoresDoTask ();
+..\main.c(144): warning:  #223-D: function "sensorScanningDoTask" declared implicitly
+  		sensorScanningDoTask ();
+..\main.c(145): warning:  #223-D: function "sensorStoringDoTask" declared implicitly
+  		sensorStoringDoTask ();
+..\main.c(146): warning:  #223-D: function "iEDDoTask" declared implicitly
+  		iEDDoTask();
+..\main.c(148): warning:  #223-D: function "circDoTask" declared implicitly
+  		circDoTask();
+..\main.c(149): warning:  #223-D: function "groupsDoTask" declared implicitly
+  		groupsDoTask();
+..\main.c: 16 warnings, 0 errors
+compiling ethFramming.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\ethFramming.c(159): warning:  #223-D: function "normaLinkCmdPasarelaT5" declared implicitly
+  		if (_comH==0x01)		normaLinkCmdPasarelaT5(_comL);
+..\ethFramming.c(173): warning:  #223-D: function "normaLink62386209T4" declared implicitly
+  		if (_comH==0x65) normaLink62386209T4(_comL);	
+..\ethFramming.c(189): warning:  #223-D: function "normaLinkSensores" declared implicitly
+  			normaLinkSensores(_comL);	
+..\ethFramming.c(220): warning:  #223-D: function "ethTransceiverTiempoSinRecibirCntRst" declared implicitly
+  				ethTransceiverTiempoSinRecibirCntRst();
+..\ethFramming.c: 5 warnings, 0 errors
+compiling daliTransceiver.c...
+..\daliTransceiver.c(126): warning:  #223-D: function "botoneraLinkLedBlink" declared implicitly
+  		botoneraLinkLedBlink(); 			
+..\daliTransceiver.c(151): warning:  #223-D: function "botoneraLinkLedBlink" declared implicitly
+  		botoneraLinkLedBlink(); 			
+..\daliTransceiver.c(210): warning:  #223-D: function "sysTickDelay" declared implicitly
+  			sysTickDelay(1);
+..\daliTransceiver.c(241): warning:  #223-D: function "botoneraFailLedEncender" declared implicitly
+  			botoneraFailLedEncender();
+..\daliTransceiver.c(245): warning:  #223-D: function "botoneraFailLedApagar" declared implicitly
+  			botoneraFailLedApagar();
+..\daliTransceiver.c(344): warning:  #223-D: function "polling_BusyClear" declared implicitly
+  			polling_BusyClear();
+..\daliTransceiver.c(362): warning:  #223-D: function "polling_BusyClear" declared implicitly
+  			polling_BusyClear();
+..\daliTransceiver.c: 7 warnings, 0 errors
+compiling spi2.c...
+compiling system_stm32f0xx.c...
+compiling polling.c...
+..\polling.h(9): warning:  #1-D: last line of file ends without a newline
+  void pollingRst (void);
+..\historicoTest.h(2): warning:  #1-D: last line of file ends without a newline
+  void historicoTest_ProcesaEstaEmergencia(unsigned char address, unsigned char value);
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\polling.c(206): warning:  #223-D: function "utils_BitFromByteArrayGet" declared implicitly
+  			if (utils_BitFromByteArrayGet (&daliReplyValidArray[0], n)==0x01)	ultimo=n;		
+..\polling.c(210): warning:  #223-D: function "utils_BitFromByteArrayClear" declared implicitly
+  			utils_BitFromByteArrayClear(&daliSentApply[0],n);
+..\polling.c(225): warning:  #223-D: function "utils_BitFromByteArrayGet" declared implicitly
+  			if (utils_BitFromByteArrayGet (&daliReplyValidArray[0], n)==0x01)	ultimo=n;		
+..\polling.c(229): warning:  #223-D: function "utils_BitFromByteArrayClear" declared implicitly
+  			utils_BitFromByteArrayClear(&daliSentApply[0],n);
+..\polling.c(188): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];		
+..\polling.c: 8 warnings, 0 errors
+compiling stm32f0xx_it.c...
+..\stm32f0xx_it.c(126): warning:  #223-D: function "rtccSecondsTick" declared implicitly
+  		rtccSecondsTick();
+..\stm32f0xx_it.c: 1 warning, 0 errors
+compiling m25p.c...
+compiling spi1.c...
+compiling ethTransceiver.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\iED.h(29): warning:  #1-D: last line of file ends without a newline
+  void iD2DoTask(void);
+..\ethTransceiver.c(210): warning:  #223-D: function "ethICMPPingSend" declared implicitly
+  					ethICMPPingSend(&gatewayAddress[0]);
+..\ethTransceiver.c(227): warning:  #223-D: function "ethICMPPongReceivedGet" declared implicitly
+  				if ((ethICMPPongReceivedGet()==0x01) || (ethICMPPongTimeoutGet()==0x01))
+..\ethTransceiver.c(227): warning:  #223-D: function "ethICMPPongTimeoutGet" declared implicitly
+  				if ((ethICMPPongReceivedGet()==0x01) || (ethICMPPongTimeoutGet()==0x01))
+..\ethTransceiver.c(240): warning:  #223-D: function "botoneraFailLedBlink" declared implicitly
+  						botoneraFailLedBlink();
+..\ethTransceiver.c(256): warning:  #223-D: function "webServerDoTask" declared implicitly
+  			webServerDoTask();			
+..\ethTransceiver.c(326): warning:  #223-D: function "socket" declared implicitly
+  	socket(0,Sn_MR_UDP,2234,0);	
+..\ethTransceiver.c: 8 warnings, 0 errors
+compiling config.c...
+..\config.c(576): warning:  #177-D: variable "n"  was declared but never referenced
+  	unsigned char n;		
+..\config.c(577): warning:  #177-D: variable "addressM"  was declared but never referenced
+  	unsigned char addressM;	
+..\config.c(578): warning:  #177-D: variable "buffer"  was declared but never referenced
+  	unsigned char buffer[14];	
+..\config.c(663): warning:  #223-D: function "sensoresGruposToMatrizGruposGet" declared implicitly
+  		_grupoShort=sensoresGruposToMatrizGruposGet(cfg[7]);		
+..\config.c(708): warning:  #177-D: variable "n"  was declared but never referenced
+  	unsigned char n;		
+..\config.c(709): warning:  #177-D: variable "addressM"  was declared but never referenced
+  	unsigned char addressM;	
+..\config.c(710): warning:  #177-D: variable "buffer"  was declared but never referenced
+  	unsigned char buffer[14];	
+..\config.c(711): warning:  #177-D: variable "status"  was declared but never referenced
+  	unsigned char status;	 
+..\config.c(712): warning:  #177-D: variable "firstByte"  was declared but never referenced
+  	unsigned char firstByte;	
+..\config.c: 9 warnings, 0 errors
+compiling normalink.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\normalink.c(162): warning:  #223-D: function "ethSendFrame" declared implicitly
+  			ethSendFrame(0,&respuesta[0],5,&normaLinkReplyToIp[0], portDest);					
+..\normalink.c(173): warning:  #223-D: function "ethSendFrame" declared implicitly
+  			ethSendFrame(0,&respuesta[0],5,&normaLinkReplyToIp[0], portDest);					
+..\normalink.c(137): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];
+..\normalink.c(209): warning:  #223-D: function "ethSendFrame" declared implicitly
+  			ethSendFrame(0,&respuesta[0],5,&normaLinkReplyToIp[0], portDest);					
+..\normalink.c(220): warning:  #223-D: function "ethSendFrame" declared implicitly
+  			ethSendFrame(0,&respuesta[0],5,&normaLinkReplyToIp[0], portDest);					
+..\normalink.c(268): warning:  #223-D: function "ethSendFrame" declared implicitly
+  			ethSendFrame(0,&respuesta[0],5,&normaLinkReplyToIp[0], portDest);		
+..\normalink.c(245): warning:  #177-D: variable "crc"  was declared but never referenced
+  	unsigned char crc;	
+..\normalink.c: 8 warnings, 0 errors
+compiling board.c...
+..\board.c(46): warning:  #177-D: variable "w811en"  was declared but never referenced
+  	GPIO_InitTypeDef	w811en;
+..\board.c(58): warning:  #550-D: variable "i1"  was set but never used
+  	GPIO_InitTypeDef i1;
+..\board.c(59): warning:  #550-D: variable "i2"  was set but never used
+  	GPIO_InitTypeDef i2;
+..\board.c: 3 warnings, 0 errors
+compiling normaLinkCfgInfoPasarela.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\normaLinkCfgInfoPasarela.c(30): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &ipAddress[0], &ptr, 4);		
+..\normaLinkCfgInfoPasarela.c(38): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &subMask[0], &ptr, 4);				
+..\normaLinkCfgInfoPasarela.c(46): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &gtwAddress[0], &ptr, 4);		
+..\normaLinkCfgInfoPasarela.c(54): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &nombreEdificio[0], &ptr, 16);	
+..\normaLinkCfgInfoPasarela.c(62): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &nombreLinea[0], &ptr, 16);	
+..\normaLinkCfgInfoPasarela.c(87): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &passAdmin[0], &ptr, 16);	
+..\normaLinkCfgInfoPasarela.c(95): warning:  #223-D: function "arrayPop" declared implicitly
+  		arrayPop (&recibireth[7], &passMantenedor[0], &ptr, 16);	
+..\normaLinkCfgInfoPasarela.c(107): warning:  #223-D: function "historicoReadableEventsCntGet" declared implicitly
+  		readableEvents=historicoReadableEventsCntGet();	
+..\normaLinkCfgInfoPasarela.c(108): warning:  #223-D: function "wdtReloadEnable" declared implicitly
+  		wdtReloadEnable();		
+..\normaLinkCfgInfoPasarela.c(120): warning:  #223-D: function "wdtReload" declared implicitly
+  				wdtReload();
+..\normaLinkCfgInfoPasarela.c(105): warning:  #177-D: variable "_dataTx"  was declared but never referenced
+  		unsigned char _dataTx[16];				
+..\normaLinkCfgInfoPasarela.c(198): warning:  #223-D: function "embeddedBootloaderWrite" declared implicitly
+  			if (_comL==0xB1)		embeddedBootloaderWrite (&dataRx[0]);
+..\normaLinkCfgInfoPasarela.c(199): warning:  #223-D: function "eBootloaderTransceiver_Write" declared implicitly
+  			if (_comL==0xC1)		eBootloaderTransceiver_Write (&dataRx[0]);
+..\normaLinkCfgInfoPasarela.c(19): warning:  #177-D: variable "_data"  was declared but never referenced
+  	unsigned char _data[16];
+..\normaLinkCfgInfoPasarela.c(234): warning:  #223-D: function "arrayPush" declared implicitly
+  		arrayPush(&ipAddress[0],&_respuesta[ptr],&ptr,4);
+..\normaLinkCfgInfoPasarela.c(246): warning:  #223-D: function "arrayPush" declared implicitly
+  		arrayPush(&submaskAddress[0],&_respuesta[ptr],&ptr,4);
+..\normaLinkCfgInfoPasarela.c(258): warning:  #223-D: function "arrayPush" declared implicitly
+  		arrayPush(&gatewayAddress[0],&_respuesta[ptr],&ptr,4);
+..\normaLinkCfgInfoPasarela.c(269): warning:  #223-D: function "arrayPush" declared implicitly
+  		arrayPush(&macAdrress[0],&_respuesta[ptr],&ptr,6);
+..\normaLinkCfgInfoPasarela.c(281): warning:  #223-D: function "arrayPush" declared implicitly
+  		arrayPush(&nombreEdificio[0],&_respuesta[ptr],&ptr,16);
+..\normaLinkCfgInfoPasarela.c(293): warning:  #223-D: function "arrayPush" declared implicitly
+  		arrayPush(&nombreLinea[0],&_respuesta[ptr],&ptr,16);
+..\normaLinkCfgInfoPasarela.c(369): warning:  #223-D: function "daliTransceiverGetFwVer" declared implicitly
+  		_data[0]=daliTransceiverGetFwVer();
+..\normaLinkCfgInfoPasarela.c(472): warning:  #223-D: function "historicoReadableEventsCntGet" declared implicitly
+  		_historicoCnt=historicoReadableEventsCntGet();		
+..\normaLinkCfgInfoPasarela.c(486): warning:  #223-D: function "historicoReset" declared implicitly
+  		historicoReset();
+..\normaLinkCfgInfoPasarela.c(557): warning:  #223-D: function "embeddedBootloaderWriteStart" declared implicitly
+  		if (_comL==0xB0)		embeddedBootloaderWriteStart();
+..\normaLinkCfgInfoPasarela.c(558): warning:  #223-D: function "eBootloaderTransceiver_WriteStart" declared implicitly
+  		if (_comL==0xC0)		eBootloaderTransceiver_WriteStart();		
+..\normaLinkCfgInfoPasarela.c(564): warning:  #223-D: function "embeddedBootloaderReadStart" declared implicitly
+  		if (_comL==0xB2)	embeddedBootloaderReadStart();
+..\normaLinkCfgInfoPasarela.c(565): warning:  #223-D: function "eBootloaderTransceiver_ReadStart" declared implicitly
+  		if (_comL==0xC2)	eBootloaderTransceiver_ReadStart();
+..\normaLinkCfgInfoPasarela.c(573): warning:  #223-D: function "embeddedBootloaderRead" declared implicitly
+  		if (_comL==0xB3)	embeddedBootloaderRead(&readBuffer[0]);
+..\normaLinkCfgInfoPasarela.c(574): warning:  #223-D: function "eBootloaderTransceiver_Read" declared implicitly
+  		if (_comL==0xC3)	eBootloaderTransceiver_Read(&readBuffer[0]);		
+..\normaLinkCfgInfoPasarela.c(597): warning:  #223-D: function "embeddedBootloaderGo" declared implicitly
+  			if (embeddedBootloaderGo()==0x01)
+..\normaLinkCfgInfoPasarela.c(609): warning:  #223-D: function "eBootloaderTransceiver_Go" declared implicitly
+  			if (eBootloaderTransceiver_Go()==0x01)
+..\normaLinkCfgInfoPasarela.c: 33 warnings, 0 errors
+compiling normaLinkCmdPasarela.c...
+..\polling.h(9): warning:  #1-D: last line of file ends without a newline
+  void pollingRst (void);
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\normaLinkCmdPasarela.c: 4 warnings, 0 errors
+compiling normaLink62386P202.c...
+..\normaLink62386P202.c(16): warning:  #223-D: function "polling_PollEmergencyMode" declared implicitly
+  		polling_PollEmergencyMode();
+..\normaLink62386P202.c(29): warning:  #223-D: function "polling_PollEmergencyMode" declared implicitly
+  		polling_PollEmergencyMode();
+..\normaLink62386P202.c(36): warning:  #223-D: function "polling_PollEmergencyMode" declared implicitly
+  		polling_PollEmergencyMode();		
+..\normaLink62386P202.c(37): warning:  #223-D: function "polling_PollEmergencyStatus" declared implicitly
+  		polling_PollEmergencyStatus(0x00);
+..\normaLink62386P202.c(38): warning:  #223-D: function "historicoTest_PeticionManual" declared implicitly
+  		historicoTest_PeticionManual(_dest, HISTORICO_SOLICITADO_FT);
+..\normaLink62386P202.c(45): warning:  #223-D: function "polling_PollEmergencyMode" declared implicitly
+  		polling_PollEmergencyMode();
+..\normaLink62386P202.c(46): warning:  #223-D: function "polling_PollEmergencyStatus" declared implicitly
+  		polling_PollEmergencyStatus(0x01);
+..\normaLink62386P202.c(47): warning:  #223-D: function "historicoTest_PeticionManual" declared implicitly
+  		historicoTest_PeticionManual(_dest, HISTORICO_SOLICITADO_DT);
+..\normaLink62386P202.c(54): warning:  #223-D: function "polling_PollEmergencyMode" declared implicitly
+  		polling_PollEmergencyMode();
+..\normaLink62386P202.c(55): warning:  #223-D: function "polling_PollEmergencyStatus" declared implicitly
+  		polling_PollEmergencyStatus(0x00);
+..\normaLink62386P202.c(56): warning:  #223-D: function "historicoTest_PeticionManual" declared implicitly
+  		historicoTest_PeticionManual(_dest, HISTORICO_STOP_TEST);
+..\normaLink62386P202.c: 11 warnings, 0 errors
+compiling rtcc.c...
+..\polling.h(9): warning:  #1-D: last line of file ends without a newline
+  void pollingRst (void);
+..\rtcc.c(197): warning:  #223-D: function "sensoresRtcTick" declared implicitly
+  	 sensoresRtcTick();
+..\rtcc.c(198): warning:  #223-D: function "polling_Tick" declared implicitly
+  		polling_Tick();
+..\rtcc.c(199): warning:  #223-D: function "daliLoopRtccTick" declared implicitly
+  		daliLoopRtccTick();
+..\rtcc.c(200): warning:  #223-D: function "wdtTick" declared implicitly
+  		wdtTick();
+..\rtcc.c: 5 warnings, 0 errors
+compiling normaLinkSingleLoop.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\normaLinkSingleLoop.c(329): warning:  #223-D: function "bytePush" declared implicitly
+  			bytePush(groupCnt,&_respuesta[ptr],&ptr);																														//1
+..\normaLinkSingleLoop.c(330): warning:  #223-D: function "arrayPush" declared implicitly
+  			arrayPush(&belongsGroup[0],&_respuesta[ptr],&ptr,8);																								//8				
+..\normaLinkSingleLoop.c(515): warning:  #223-D: function "qSNRead" declared implicitly
+  		qSNRead(0, &ipDest[0]);		
+..\normaLinkSingleLoop.c(519): warning:  #1-D: last line of file ends without a newline
+  }	
+..\normaLinkSingleLoop.c: 5 warnings, 0 errors
+compiling test.c...
+..\test.c(24): warning:  #223-D: function "polling_PollEmergencyStatus" declared implicitly
+  				polling_PollEmergencyStatus(0x00);
+..\test.c(36): warning:  #223-D: function "polling_PollEmergencyStatus" declared implicitly
+  				polling_PollEmergencyStatus(0x01);
+..\test.c: 2 warnings, 0 errors
+compiling temp.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\temp.c: 1 warning, 0 errors
+compiling botonera.c...
+..\botonera.c(142): warning:  #223-D: function "sendKeepAlive" declared implicitly
+  		sendKeepAlive();
+..\botonera.c(144): warning:  #223-D: function "daliUtilsBlinkGet" declared implicitly
+  		if (daliUtilsBlinkGet()==0x00)
+..\botonera.c(150): warning:  #223-D: function "daliUtilsBlinkTerminate" declared implicitly
+  			daliUtilsBlinkTerminate();
+..\botonera.c: 3 warnings, 0 errors
+compiling normaLink62386P102.c...
+..\normaLink62386P102.c(104): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(105): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  		actualLevelCmdNotify(_dest, _comL, 0xFF);		
+..\normaLink62386P102.c(112): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(119): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(126): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(133): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(140): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();		
+..\normaLink62386P102.c(141): warning:  #223-D: function "_sensoresGruposAlgunEquipoApagadoGet" declared implicitly
+  		if (((_dest&0xE1)==0x81) && (_sensoresGruposAlgunEquipoApagadoGet(((_dest&0x1E)>>1))==FALSE))
+..\normaLink62386P102.c(143): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  			circGruposInhibidosSet (((_dest&0x1E)>>1),0);
+..\normaLink62386P102.c(145): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  		actualLevelCmdNotify(_dest, _comL, 0xFF);				
+..\normaLink62386P102.c(152): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(155): warning:  #223-D: function "_sensoresGruposAlgunEquipoApagadoGet" declared implicitly
+  			if (((_dest&0xE1)==0x81) && (_sensoresGruposAlgunEquipoApagadoGet(((_dest&0x1E)>>1))==FALSE))
+..\normaLink62386P102.c(157): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  				circGruposInhibidosSet (((_dest&0x1E)>>1),0);
+..\normaLink62386P102.c(160): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  		actualLevelCmdNotify(_dest, _comL, 0xFF);			
+..\normaLink62386P102.c(167): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(174): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(187): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(195): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(203): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(211): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(219): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(227): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(235): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(243): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(251): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(259): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(267): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(275): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(283): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(291): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(299): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(307): warning:  #223-D: function "polling_PollActualLevel" declared implicitly
+  		polling_PollActualLevel();
+..\normaLink62386P102.c(316): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  			circGruposInhibidosSet (((_dest&0x1E)>>1),0);
+..\normaLink62386P102.c(1092): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(_dest, _comL, _data);			
+..\normaLink62386P102.c(1095): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  				circGruposInhibidosSet (((_dest&0x1E)>>1),0);
+..\normaLink62386P102.c: 35 warnings, 0 errors
+compiling historico.c...
+compiling ethPing.c...
+compiling fallos.c...
+compiling storage.c...
+compiling daliUtils.c...
+..\polling.h(9): warning:  #1-D: last line of file ends without a newline
+  void pollingRst (void);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\daliUtils.c: 2 warnings, 0 errors
+compiling webserver.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\webserver.c(341): warning:  #550-D: variable "nombreEdificio"  was set but never used
+  	unsigned char nombreEdificio[17];
+..\webserver.c(342): warning:  #550-D: variable "nombreLinea"  was set but never used
+  	unsigned char nombreLinea[17];
+..\webserver.c(343): warning:  #550-D: variable "passAdmin"  was set but never used
+  	unsigned char passAdmin[17];
+..\webserver.c: 4 warnings, 0 errors
+compiling wdt.c...
+compiling sensoresGrupos.c...
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\sensoresGrupos\sensoresGrupos.c(107): warning:  #223-D: function "actualLevel_GrupoValoresGet" declared implicitly
+  					actualLevel_GrupoValoresGet (numeroGrupo, &valores[0]);					
+..\sensoresGrupos\sensoresGrupos.c(113): warning:  #188-D: enumerated type mixed with another type
+  				return retVal;
+..\sensoresGrupos\sensoresGrupos.c(283): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  				circGruposInhibidosSet(numeroGrupo, 0);
+..\sensoresGrupos\sensoresGrupos.c(305): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  				circGruposInhibidosSet(numeroGrupo, 0);
+..\sensoresGrupos\sensoresGrupos.c(460): warning:  #223-D: function "_sensoresDALIonAndStepUpEnviar" declared implicitly
+                  if (_sensoresDALIonAndStepUpEnviar(numeroGrupo)==TRUE)
+..\sensoresGrupos\sensoresGrupos.c(486): warning:  #223-D: function "_sensoresDALItcStepUpEnviar" declared implicitly
+  							if (_sensoresDALItcStepUpEnviar(numeroGrupo)==TRUE)
+..\sensoresGrupos\sensoresGrupos.c(493): warning:  #223-D: function "_sensoresDALItcStepDownEnviar" declared implicitly
+  							if (_sensoresDALItcStepDownEnviar(numeroGrupo)==TRUE)
+..\sensoresGrupos\sensoresGrupos.c(500): warning:  #223-D: function "_sensoresDALIgoToSceneEnviar" declared implicitly
+  								if (_sensoresDALIgoToSceneEnviar(numeroGrupo,_sensoresGruposAccionGoToScenePending[numeroGrupo][1])==TRUE)
+..\sensoresGrupos\sensoresGrupos.c: 9 warnings, 0 errors
+compiling normaLinkDaliUtils.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\normaLinkDaliUtils.c(167): warning:  #223-D: function "spi1Write" declared implicitly
+  			spi1Write(0xFB, recibireth[(136-n)]);
+..\normaLinkDaliUtils.c(182): warning:  #223-D: function "spi1Read" declared implicitly
+  		bootStatus=spi1Read(0xFA);		
+..\normaLinkDaliUtils.c(195): warning:  #223-D: function "spi1Write" declared implicitly
+  		spi1Write(0xFF, 0xA0);	
+..\normaLinkDaliUtils.c(306): warning:  #223-D: function "daliUtilsBlinkTerminate" declared implicitly
+  		daliUtilsBlinkTerminate ();
+..\normaLinkDaliUtils.c: 5 warnings, 0 errors
+compiling systick.c...
+..\systick.c(17): warning:  #223-D: function "ethTransceiverTick" declared implicitly
+  	ethTransceiverTick();
+..\systick.c(18): warning:  #223-D: function "ethICMPTick" declared implicitly
+  	ethICMPTick();
+..\systick.c(19): warning:  #223-D: function "daliUtilsTick" declared implicitly
+  	daliUtilsTick ();
+..\systick.c(21): warning:  #223-D: function "botoneraTick" declared implicitly
+  	botoneraTick();
+..\systick.c(22): warning:  #223-D: function "groupsTick" declared implicitly
+  	groupsTick();
+..\systick.c(23): warning:  #223-D: function "sensoresSysTick" declared implicitly
+  	sensoresSysTick ();
+..\systick.c: 6 warnings, 0 errors
+compiling sensoresGruposDetectoresPresencia.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposDetectoresPresencia.c(231): warning:  #188-D: enumerated type mixed with another type
+                  sensoresGruposDetectoresPresenciaAccionSolicitar (numeroGrupo, comportamiento, TRUE);
+..\sensoresGrupos\sensoresGruposDetectoresPresencia.c(259): warning:  #188-D: enumerated type mixed with another type
+                      sensoresGruposDetectoresPresenciaAccionSolicitar (numeroGrupo, comportamiento, TRUE);
+..\sensoresGrupos\sensoresGruposDetectoresPresencia.c(472): warning:  #1-D: last line of file ends without a newline
+  // FUNCIONES
+..\sensoresGrupos\sensoresGruposDetectoresPresencia.c: 4 warnings, 0 errors
+compiling sensoresGruposPulsadoresAccionBasculante.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposPulsadoresAccionBasculante.c: 1 warning, 0 errors
+compiling sensoresGruposPulsadoresAccionRegulacion.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposPulsadoresAccionRegulacion.c(125): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  						circGruposInhibidosSet (numeroGrupo, 0);
+..\sensoresGrupos\sensoresGruposPulsadoresAccionRegulacion.c(202): warning:  #223-D: function "_sensoresGruposAccionOnAndStepUpSet" declared implicitly
+  													 _sensoresGruposAccionOnAndStepUpSet(numeroGrupo);
+..\sensoresGrupos\sensoresGruposPulsadoresAccionRegulacion.c(248): warning:  #177-D: variable "enviar"  was declared but never referenced
+  				unsigned char enviar;
+..\sensoresGrupos\sensoresGruposPulsadoresAccionRegulacion.c(265): warning:  #177-D: variable "enviar"  was declared but never referenced
+  				unsigned char enviar=0;
+..\sensoresGrupos\sensoresGruposPulsadoresAccionRegulacion.c: 5 warnings, 0 errors
+compiling sensoresGruposPulsadoresAccionFija.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposPulsadoresAccionFija.c(129): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  										circGruposInhibidosSet(numeroGrupo, 0);
+..\sensoresGrupos\sensoresGruposPulsadoresAccionFija.c(135): warning:  #223-D: function "circGruposInhibidosClear" declared implicitly
+  									circGruposInhibidosClear(numeroGrupo, 0);
+..\sensoresGrupos\sensoresGruposPulsadoresAccionFija.c(140): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  									circGruposInhibidosSet(numeroGrupo, 0);
+..\sensoresGrupos\sensoresGruposPulsadoresAccionFija.c: 4 warnings, 0 errors
+compiling sensoresGruposPulsadoresAccionTemporizada.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposPulsadoresAccionTemporizada.c: 1 warning, 0 errors
+compiling sensoresGruposReguladoresLuz.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposReguladoresLuz.c: 1 warning, 0 errors
+compiling interfaces.c...
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\interfaces.c(122): warning:  #223-D: function "normaLinkSensoresDoTask" declared implicitly
+  				normaLinkSensoresDoTask(); 		
+..\interfaces.c(150): warning:  #223-D: function "sensorStoringStart" declared implicitly
+  	if (sensorStoringStart (interfazAddress, cfg[1], cfg[3],  interfacesCfgIp, packetId_1, packetId_2, &cfg[0])==1)
+..\interfaces.c(152): warning:  #188-D: enumerated type mixed with another type
+  		return 1;
+..\interfaces.c(156): warning:  #188-D: enumerated type mixed with another type
+  		return 0;
+..\interfaces.c(175): warning:  #223-D: function "configInterfacesConfiguracionGet" declared implicitly
+  		if (configInterfacesConfiguracionGet(interfazAddress, &arrayCfg[0])==TRUE)
+..\interfaces.c(247): warning:  #188-D: enumerated type mixed with another type
+  						evento.sentidoAscendente=0xFF;
+..\interfaces.c(248): warning:  #188-D: enumerated type mixed with another type
+  						evento.posicionEncender=0xFF;
+..\interfaces.c(292): warning:  #188-D: enumerated type mixed with another type
+  						evento.posicionEncender=0xFF;
+..\interfaces.c(409): warning:  #188-D: enumerated type mixed with another type
+  						evento.sentidoAscendente=0xFF;						
+..\interfaces.c(417): warning:  #188-D: enumerated type mixed with another type
+  						evento.posicionEncender=0xFF;
+..\interfaces.c(418): warning:  #188-D: enumerated type mixed with another type
+  						evento.sentidoAscendente=0xFF;	
+..\interfaces.c(426): warning:  #188-D: enumerated type mixed with another type
+  						evento.posicionEncender=0xFF;
+..\interfaces.c(427): warning:  #188-D: enumerated type mixed with another type
+  						evento.sentidoAscendente=0xFF;	
+..\interfaces.c(449): warning:  #188-D: enumerated type mixed with another type
+  						evento.posicionEncender=0xFF;
+..\interfaces.c(468): warning:  #188-D: enumerated type mixed with another type
+  							evento.posicionEncender=0xFF;
+..\interfaces.c(504): warning:  #223-D: function "daliSensoresQuerySensorStatusEnviar" declared implicitly
+  		daliSensoresQuerySensorStatusEnviar(0xFF);
+..\interfaces.c(138): warning:  #177-D: function "interfacesConfiguracionArrayFromStructGet"  was declared but never referenced
+  static void interfacesConfiguracionArrayFromStructGet (interfacesConfiguracion configuracion, unsigned char *cfg)
+..\interfaces.c: 18 warnings, 0 errors
+compiling sensores.c...
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensores.c(107): warning:  #223-D: function "sensoresGruposReguladoresLuzEstadoActualizar" declared implicitly
+  				sensoresGruposReguladoresLuzEstadoActualizar (0xffff);
+..\sensores.c(125): warning:  #223-D: function "actualLevel_GrupoValoresGet" declared implicitly
+  					 actualLevel_GrupoValoresGet (byteNotif[n], &valores[0]);				
+..\sensores.c(139): warning:  #223-D: function "polling_TmpDisable" declared implicitly
+  			polling_TmpDisable();
+..\sensores.c(146): warning:  #223-D: function "polling_EndTmpDisable" declared implicitly
+  			polling_EndTmpDisable();
+..\sensores.c(150): warning:  #188-D: enumerated type mixed with another type
+  			return answer;
+..\sensores.c(301): warning:  #223-D: function "_sensoresGruposAlgunoOperativoClear" declared implicitly
+  				_sensoresGruposAlgunoOperativoClear();
+..\sensores.c(316): warning:  #223-D: function "_sensoresGruposAlgunoOperativoSet" declared implicitly
+  									_sensoresGruposAlgunoOperativoSet(sensoresMatrizGruposToGrupoGet(configuracion.matrizGrupos), (configuracion.tipoSensor&0x0F));							
+..\sensores.c(300): warning:  #177-D: variable "grupo"  was declared but never referenced
+  				unsigned char grupo;			
+..\sensores.c(328): warning:  #223-D: function "normaLinkSensoresDoTask" declared implicitly
+  				normaLinkSensoresDoTask();			
+..\sensores.c(339): warning:  #223-D: function "daliSensoresSysTick" declared implicitly
+  				daliSensoresSysTick();
+..\sensores.c(340): warning:  #223-D: function "normaLinkSensoresSysTick" declared implicitly
+  				normaLinkSensoresSysTick();
+..\sensores.c(397): warning:  #188-D: enumerated type mixed with another type
+  						configuracion.tipoSensor=((configuracion.tipoSensor)&0x0F);
+..\sensores.c(484): warning:  #223-D: function "daliSensoresOnAndStepUpEnviar" declared implicitly
+          return daliSensoresOnAndStepUpEnviar (numeroGrupo);
+..\sensores.c(484): warning:  #188-D: enumerated type mixed with another type
+          return daliSensoresOnAndStepUpEnviar (numeroGrupo);
+..\sensores.c(493): warning:  #223-D: function "daliSensoresTcStepUpEnviar" declared implicitly
+  				return daliSensoresTcStepUpEnviar (numeroGrupo);
+..\sensores.c(493): warning:  #188-D: enumerated type mixed with another type
+  				return daliSensoresTcStepUpEnviar (numeroGrupo);
+..\sensores.c(498): warning:  #223-D: function "daliSensoresTcStepDownEnviar" declared implicitly
+  				return daliSensoresTcStepDownEnviar (numeroGrupo);
+..\sensores.c(498): warning:  #188-D: enumerated type mixed with another type
+  				return daliSensoresTcStepDownEnviar (numeroGrupo);
+..\sensores.c(512): warning:  #223-D: function "daliSensoresGoToSceneEnviar" declared implicitly
+          return daliSensoresGoToSceneEnviar(sensorAddress);
+..\sensores.c(512): warning:  #188-D: enumerated type mixed with another type
+          return daliSensoresGoToSceneEnviar(sensorAddress);
+..\sensores.c(342): warning:  #177-D: function "sensoresInterfazNumeroSerieCoincideGet"  was declared but never referenced
+      static BOOL sensoresInterfazNumeroSerieCoincideGet(interfacesNumeroSerie numeroSerieEntrada, interfacesNumeroSerie numeroSerie)
+..\sensores.c(353): warning:  #177-D: function "sensoresInterfazCanalCoincideGet"  was declared but never referenced
+      static BOOL sensoresInterfazCanalCoincideGet (unsigned char canalEntrada, unsigned char canal)
+..\sensores.c: 24 warnings, 0 errors
+compiling normaLinkSensores.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\normaLinkSensores.c(70): warning:  #550-D: variable "respuestaEth"  was set but never used
+  			unsigned char respuestaEth[6];
+..\normaLinkSensores.c(104): warning:  #550-D: variable "ip"  was set but never used
+  	unsigned char ip[4];
+..\normaLinkSensores.c(261): warning:  #188-D: enumerated type mixed with another type
+  		evento.eventoTipo=(evento.eventoTipo&0x0F);
+..\normaLinkSensores.c(282): warning:  #223-D: function "daliAddressingNewInitialisationStart" declared implicitly
+  		daliAddressingNewInitialisationStart(&ipDest[0], 0x01);		//0x01 means EXTENDED DEVICES.
+..\normaLinkSensores.c(287): warning:  #223-D: function "sensorScanningStart" declared implicitly
+  			sensorScanningStart (&ipDest[0]);	
+..\normaLinkSensores.c(484): warning:  #223-D: function "sensorStoringSetSetpoint" declared implicitly
+  		if (sensorStoringSetSetpoint (recibireth[7],recibireth[8])==0x01)
+..\normaLinkSensores.c(505): warning:  #223-D: function "sensorStoringQuerySetpoint" declared implicitly
+  		sensorStoringQuerySetpoint(recibireth[7],&ipDest[0]);
+..\normaLinkSensores.c(514): warning:  #223-D: function "normalinkDaliSend" declared implicitly
+  		normalinkDaliSend(&ipDest[0],_packetId, 0x16, recibireth[7], 0x2E, recibireth[8]);
+..\normaLinkSensores.c(249): warning:  #177-D: variable "valores"  was declared but never referenced
+  	unsigned char valores[3];
+..\normaLinkSensores.c: 12 warnings, 0 errors
+compiling daliSensores.c...
+..\daliSensores.c(119): warning:  #223-D: function "normaLinkSensoresDebugTransceptorLiberado" declared implicitly
+  			normaLinkSensoresDebugTransceptorLiberado();			
+..\daliSensores.c(128): warning:  #223-D: function "polling_TmpDisable" declared implicitly
+          polling_TmpDisable();
+..\daliSensores.c(134): warning:  #223-D: function "polling_EndTmpDisable" declared implicitly
+          polling_EndTmpDisable();
+..\daliSensores.c(151): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0x01, 0x16, ((sensorAddress<<1)+1), &_apply[0], 0x2E, 
+OMANDO_DALI_QUERY_SENSOR_STATUS);
+..\daliSensores.c(173): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0x01, 0x16, ((sensorAddress<<1)+1), &_apply[0], 0x2E, 0xFC);
+..\daliSensores.c(189): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x81), &apply[0], 0x2B, 
+OMANDO_DALI_GOTO_SCENE_0+scene);
+..\daliSensores.c(190): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(((numeroGrupo<<1)+0x81), (COMANDO_DALI_GOTO_SCENE_0+scene), 0xFF);				
+..\daliSensores.c(220): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x81), &apply[0], 0x2B, 
+OMANDO_DALI_RECALL_MAX_LEVEL);
+..\daliSensores.c(221): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(((numeroGrupo<<1)+0x81), (COMANDO_DALI_RECALL_MAX_LEVEL+1), 0xFF);				
+..\daliSensores.c(241): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x81), &apply[0], 0x2B, 
+OMANDO_DALI_OFF);
+..\daliSensores.c(242): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(((numeroGrupo<<1)+0x81), (COMANDO_DALI_OFF+1), 0xFF);				
+..\daliSensores.c(263): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x81), &apply[0], 0x2B, 
+OMANDO_DALI_ON_AND_STEP_UP);
+..\daliSensores.c(284): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x81), &apply[0], 0x2B, 
+OMANDO_DALI_UP);
+..\daliSensores.c(286): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(((numeroGrupo<<1)+0x81), (COMANDO_DALI_UP+1), 0xFF);				
+..\daliSensores.c(306): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x81), &apply[0], 0x2B, 
+OMANDO_DALI_DOWN);
+..\daliSensores.c(308): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(((numeroGrupo<<1)+0x81), (COMANDO_DALI_DOWN+1), 0xFF);				
+..\daliSensores.c(342): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliBufferSend(
+ALI_SENSORS, 0xFFFF, 0x17, &destArray[0],&comArray[0]);		
+..\daliSensores.c(326): warning:  #177-D: variable "apply"  was declared but never referenced
+  		unsigned char apply[8];
+..\daliSensores.c(378): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliBufferSend(
+ALI_SENSORS, 0xFFFF, 0x17, &destArray[0],&comArray[0]);
+..\daliSensores.c(362): warning:  #177-D: variable "apply"  was declared but never referenced
+  		unsigned char apply[8];
+..\daliSensores.c(400): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0xFFFF, 0x01, ((numeroGrupo<<1)+0x80), &apply[0], 0x2B, nivel);		
+..\daliSensores.c(401): warning:  #223-D: function "actualLevelCmdNotify" declared implicitly
+  			actualLevelCmdNotify(((numeroGrupo<<1)+0x81), 0x00, 0xFF);				
+..\daliSensores.c(423): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0x01, 0x16, ((sensorAddress<<1)+1), &apply[0], 0x2E, 
+OMANDO_DALI_QUERY_SENSOR_NIVEL);        
+..\daliSensores.c(437): warning:  #188-D: enumerated type mixed with another type
+  			answer=daliSend(
+ALI_SENSORS, 0x01, 0x16, ((sensorAddress<<1)+1), &apply[0], 0x2E, 0xFD);        
+..\daliSensores.c(698): warning:  #223-D: function "QuerySensorTypeCb" declared implicitly
+  		QuerySensorTypeCb 		(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(699): warning:  #223-D: function "QuerySensorEnabledCb" declared implicitly
+  		QuerySensorEnabledCb	(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(700): warning:  #223-D: function "QuerySensorModeCb" declared implicitly
+  		QuerySensorModeCb			(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(701): warning:  #223-D: function "QuerySensorSerial1Cb" declared implicitly
+  		QuerySensorSerial1Cb	(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(702): warning:  #223-D: function "QuerySensorSerial2Cb" declared implicitly
+  		QuerySensorSerial2Cb	(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(703): warning:  #223-D: function "QuerySensorSerial3Cb" declared implicitly
+  		QuerySensorSerial3Cb	(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(704): warning:  #223-D: function "QuerySensorSerial4Cb" declared implicitly
+  		QuerySensorSerial4Cb	(daliSentCommandLow, daliReplyValid, daliReplyAnswer);		
+..\daliSensores.c(706): warning:  #223-D: function "cmd_START_CONFIG_cb" declared implicitly
+  		cmd_START_CONFIG_cb (daliSentCommandLow);
+..\daliSensores.c(707): warning:  #223-D: function "cmd_FINISH_CONFIG_cb" declared implicitly
+  		cmd_FINISH_CONFIG_cb (daliSentCommandLow);
+..\daliSensores.c(708): warning:  #223-D: function "cmd_ENABLE_DISABLE_cb" declared implicitly
+  		cmd_ENABLE_DISABLE_cb (daliSentCommandLow);
+..\daliSensores.c(709): warning:  #223-D: function "cmd_SET_MODE_cb" declared implicitly
+  		cmd_SET_MODE_cb (daliSentCommandLow);		
+..\daliSensores.c(710): warning:  #223-D: function "cmd_QUERY_ENABLE_DISABLE_cb" declared implicitly
+  		cmd_QUERY_ENABLE_DISABLE_cb(daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(711): warning:  #223-D: function "cmd_QUERY_MODE_cb" declared implicitly
+  		cmd_QUERY_MODE_cb (daliSentCommandLow, daliReplyValid, daliReplyAnswer);
+..\daliSensores.c(713): warning:  #223-D: function "cmd_DTR_cb" declared implicitly
+  		cmd_DTR_cb (daliSentDest);
+..\daliSensores.c(714): warning:  #223-D: function "cmd_SET_SETPOINT_cb" declared implicitly
+  		cmd_SET_SETPOINT_cb (daliSentCommandLow);
+..\daliSensores.c(715): warning:  #223-D: function "cmd_QUERY_SETPOINT_cb" declared implicitly
+  		cmd_QUERY_SETPOINT_cb (daliSentCommandLow, daliReplyValid, daliReplyAnswer);	
+..\daliSensores.c: 40 warnings, 0 errors
+compiling utils.c...
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\utils.c: 1 warning, 0 errors
+compiling sensorScanning.c...
+..\sensorScanning.c(68): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorScanning.c(81): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorScanning.c(94): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorScanning.c(109): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorScanning.c(122): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);								
+..\sensorScanning.c(135): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorScanning.c(148): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorScanning.c(320): warning:  #223-D: function "ethSendFrame" declared implicitly
+  		ethSendFrame(0,&respuesta[0],10,&_sensorScanningIp[0], 2234);			
+..\sensorScanning.c(328): warning:  #177-D: variable "n"  was declared but never referenced
+  	unsigned char n;
+..\sensorScanning.c(329): warning:  #177-D: variable "cfg"  was declared but never referenced
+  	unsigned char cfg[8];	
+..\sensorScanning.c(434): warning:  #223-D: function "interfacesInit" declared implicitly
+  						interfacesInit();	
+..\sensorScanning.c(440): warning:  #1-D: last line of file ends without a newline
+  }
+..\sensorScanning.c: 12 warnings, 0 errors
+compiling dADSA.c...
+..\dADSA.c(53): warning:  #223-D: function "dADTRSend" declared implicitly
+  		if (_dADTRSent==
+OT_SENDING)	dADTRSend(0xFF);
+..\dADSA.c(54): warning:  #223-D: function "dAStoreDTRAsAddrSend" declared implicitly
+  		if (_dADTRSent==
+ENT)					dAStoreDTRAsAddrSend(0xFF);		
+..\dADSA.c: 2 warnings, 0 errors
+compiling dALS.c...
+..\dALS.c(12): warning:  #47-D: incompatible redefinition of macro "BOOL"  (declared at line 11 of "..\dataTypes.h")
+  #define BOOL                unsigned char	
+..\dALS.c(42): warning:  #223-D: function "dAQCGLStart" declared implicitly
+  				if (_dAQCGLStatus==
+OT_STARTED) 		dAQCGLStart();
+..\dALS.c(51): warning:  #223-D: function "dAQDTLStart" declared implicitly
+  				if (_dAQDTLStatus==
+OT_STARTED)			dAQDTLStart(&_dAQCGLDireccionesOcupadasMatriz[0]);
+..\dALS.c(61): warning:  #223-D: function "dAQGroupsLowSend" declared implicitly
+  				if (_dAQGroupsLowStatus==
+OT_STARTED)				dAQGroupsLowSend();
+..\dALS.c(70): warning:  #223-D: function "dAQGroupsHighSend" declared implicitly
+  				if (_dAQGroupsHighStatus==
+OT_STARTED)			dAQGroupsHighSend();
+..\dALS.c(80): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  				daliAddressingNotify(0x01,0x02,0x01,0xFF,0xFF,_dAQCGLDireccionesOcupadasCnt);	
+..\dALS.c(37): warning:  #177-D: variable "applyDT"  was declared but never referenced
+  		unsigned char applyDT[8];	
+..\dALS.c(95): warning:  #223-D: function "dAQCGLDoneFlagClear" declared implicitly
+  			dAQCGLDoneFlagClear();
+..\dALS.c(96): warning:  #223-D: function "dAQDTLDoneFlagClear" declared implicitly
+  			dAQDTLDoneFlagClear();
+..\dALS.c(139): warning:  #223-D: function "daliLoopInstalledArrayByteGet" declared implicitly
+  		daliLoopInstalledArrayByteGet (&apply[0]);
+..\dALS.c(159): warning:  #1-D: last line of file ends without a newline
+  }
+..\dALS.c: 11 warnings, 0 errors
+compiling dANI.c...
+..\dANI.c(57): warning:  #223-D: function "dADSADoneFlagClear" declared implicitly
+  	dADSADoneFlagClear();	
+..\dANI.c(58): warning:  #223-D: function "dASRADoneFlagClear" declared implicitly
+  	dASRADoneFlagClear();		
+..\dANI.c(59): warning:  #223-D: function "dAPSADoneFlagClear" declared implicitly
+  	dAPSADoneFlagClear();	
+..\dANI.c(126): warning:  #223-D: function "dADSAStart" declared implicitly
+  			if (_dADSAStatus==
+OT_STARTED)				dADSAStart();
+..\dANI.c(134): warning:  #223-D: function "dASRAStart" declared implicitly
+  			if (_dASRAStatus==
+OT_SENDING)				dASRAStart(ALL_DEVICES,TRUE);	
+..\dANI.c(154): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  						daliAddressingDebug(0xAA,0xFF,0xFF,0xFF,_dANIOpSRAReintentosCnt);						
+..\dANI.c(159): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  						daliAddressingDebug(0xAB,0xFF,0xFF,0xFF,0xFF);
+..\dANI.c(172): warning:  #223-D: function "dAPSAStart" declared implicitly
+  				dAPSAStart(ALL_DEVICES, _dASRAEncontradosCnt);
+..\dANI.c(185): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  			daliAddressingNotify(0x01,0x02,0x01,0xFF,0xFF,_dASRAEncontradosCnt);			
+..\dANI.c(191): warning:  #223-D: function "sensorScanningStart" declared implicitly
+  				sensorScanningStart (&_ipA[0]);
+..\dANI.c: 10 warnings, 0 errors
+compiling dAPSA.c...
+..\dAPSA.c(156): warning:  #940-D: missing return statement at end of non-void function "dAPSAStart" 
+  }
+..\dAPSA.c(118): warning:  #550-D: variable "retVal"  was set but never used
+  	unsigned char retVal;	
+..\dAPSA.c(171): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  			daliAddressingNotify(0x01,0x01,0xFF,0xFF,0x02,0x00);
+..\dAPSA.c(176): warning:  #223-D: function "dATerminateSend" declared implicitly
+  			if (_dATerminateSent==
+OT_SENDING)       				dATerminateSend();
+..\dAPSA.c(177): warning:  #223-D: function "dAInitializeSend" declared implicitly
+  			if (_dATerminateSent==
+ENT)              				dAInitializeSend(_dAPSAInitializeMode);			
+..\dAPSA.c(190): warning:  #223-D: function "dASearchAddrHSend" declared implicitly
+  			if (_dASearchAddrHSent==
+OT_SENDING)           dASearchAddrHSend(h);
+..\dAPSA.c(191): warning:  #223-D: function "dASearchAddrMSend" declared implicitly
+  			if (_dASearchAddrHSent==
+ENT)                  dASearchAddrMSend(m);
+..\dAPSA.c(192): warning:  #223-D: function "dASearchAddrLSend" declared implicitly
+  			if (_dASearchAddrMSent==
+ENT)                  dASearchAddrLSend(l);
+..\dAPSA.c(193): warning:  #223-D: function "dAQueryShortAddrSend" declared implicitly
+  			if (_dASearchAddrLSent==
+ENT)									 dAQueryShortAddrSend();
+..\dAPSA.c(200): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  						daliAddressingDebug(0x94,h,m,l,0xFF,_dAPSAEquiposCnt);
+..\dAPSA.c(220): warning:  #223-D: function "dAProgramSAddrSend" declared implicitly
+  			if (_dAProgramSAddrSent==
+OT_SENDING)						dAProgramSAddrSend((_dAPSADireccionesLibresList[_dAPSAEquiposCnt]<<1)+1);			
+..\dAPSA.c(221): warning:  #223-D: function "dAQueryShortAddrSend" declared implicitly
+  			if (_dAProgramSAddrSent==
+ENT)									dAQueryShortAddrSend();
+..\dAPSA.c(228): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  						daliAddressingDebug(0x95,h,m,l,0xFF,_dAPSAEquiposCnt);
+..\dAPSA.c(249): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  			daliAddressingNotify(0x01,0x01,0xFF,0xFF,0x02,_dAPSAEquiposCnt);
+..\dAPSA.c(263): warning:  #223-D: function "dATerminateSend" declared implicitly
+  			if (_dATerminateSent==
+OT_SENDING)                   dATerminateSend();
+..\dAPSA.c(276): warning:  #1-D: last line of file ends without a newline
+  }
+..\dAPSA.c: 16 warnings, 0 errors
+compiling embeddedBootloader.c...
+..\embeddedBootloader.c(180): warning:  #223-D: function "board_AvrBootClear" declared implicitly
+  		board_AvrBootClear();
+..\embeddedBootloader.c(181): warning:  #223-D: function "board_LedRojoOn" declared implicitly
+  		board_LedRojoOn();
+..\embeddedBootloader.c(182): warning:  #223-D: function "board_LedVerdeOn" declared implicitly
+  		board_LedVerdeOn();
+..\embeddedBootloader.c(183): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (4000);			//Con 900 funciona.
+..\embeddedBootloader.c(187): warning:  #223-D: function "board_LedRojoOff" declared implicitly
+  		board_LedRojoOff();
+..\embeddedBootloader.c(188): warning:  #223-D: function "board_LedVerdeOff" declared implicitly
+  		board_LedVerdeOff();
+..\embeddedBootloader.c(208): warning:  #223-D: function "spi1Write" declared implicitly
+  				spi1Write(0xFB, buffer1[byteCnt]);
+..\embeddedBootloader.c(211): warning:  #223-D: function "spi1Write" declared implicitly
+  			spi1Write(0xFB, (2*pageCnt));
+..\embeddedBootloader.c(232): warning:  #223-D: function "board_AvrBootSet" declared implicitly
+  		board_AvrBootSet();		
+..\embeddedBootloader.c(236): warning:  #223-D: function "board_AvrBootSet" declared implicitly
+  		board_AvrBootSet();		
+..\embeddedBootloader.c: 10 warnings, 0 errors
+compiling dAQCGL.c...
+..\dAQCGL.c(89): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  			daliAddressingNotify(0x01,0x01,0xFF,0xFF,0x01,0xFF);
+..\dAQCGL.c(90): warning:  #223-D: function "dAQueryCGLoopSend" declared implicitly
+  			dAQueryCGLoopSend();					
+..\dAQCGL.c: 2 warnings, 0 errors
+compiling dAQDTL.c...
+..\dAQDTL.c(81): warning:  #223-D: function "daliLoopInstalledGet" declared implicitly
+  			if (daliLoopInstalledGet(_dAQDTLCurrentAddress)==1)
+..\dAQDTL.c(85): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  					daliAddressingNotify(0x01,0x01,0xFF,0xFF,0x03,0xFF);
+..\dAQDTL.c(86): warning:  #223-D: function "dAQueryDTSend" declared implicitly
+  					dAQueryDTSend(_dAQDTLCurrentAddress);					
+..\dAQDTL.c(76): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];	
+..\dAQDTL.c: 4 warnings, 0 errors
+compiling dASE.c...
+..\dASE.c(66): warning:  #223-D: function "dASRADoneFlagClear" declared implicitly
+  	dASRADoneFlagClear();	
+..\dASE.c(67): warning:  #223-D: function "dAQCGLDoneFlagClear" declared implicitly
+  	dAQCGLDoneFlagClear();
+..\dASE.c(68): warning:  #223-D: function "dAPSADoneFlagClear" declared implicitly
+  	dAPSADoneFlagClear();	
+..\dASE.c(138): warning:  #223-D: function "dASRAStart" declared implicitly
+  			if (_dASRAStatus==
+OT_SENDING)	dASRAStart(NEW_DEVICES, TRUE);	
+..\dASE.c(171): warning:  #223-D: function "dAQCGLStart" declared implicitly
+  			if (_dAQCGLStatus==
+OT_SENDING) dAQCGLStart();
+..\dASE.c(179): warning:  #223-D: function "dAPSAStart" declared implicitly
+  			if (_dAPSAStatus==
+OT_SENDING) dAPSAStart(NEW_DEVICES, _dASRAEncontradosCnt);
+..\dASE.c(188): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  			daliAddressingNotify(0x01,0x02,0x01,0xFF,0xFF,_dASRAEncontradosCnt);			
+..\dASE.c: 7 warnings, 0 errors
+compiling qSN.c...
+..\ethFramming.h(4): warning:  #1-D: last line of file ends without a newline
+  void ethSendACK (unsigned char *packetId, unsigned char *ipDest);
+..\qSN.c: 1 warning, 0 errors
+compiling dASRA.c...
+..\dASRA.c(229): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  								daliAddressingNotify(0x01,0x01,0xFF,0xFF,0x00,0);
+..\dASRA.c(272): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  												daliAddressingDebug(0x01,0x02,0xFF,0x93,0xFF,0xFF);
+..\dASRA.c(508): warning:  #223-D: function "daliAddressingNotify" declared implicitly
+  														daliAddressingNotify(0x01,0x01,0xFF,0xFF,0x00,_dASRAEncontradosCnt);
+..\dASRA.c(509): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  														daliAddressingDebug(0x66,_dASRAEncontradosCnt,h,m,l,_dAQuerySAddrReplyAnswer);														
+..\dASRA.c(517): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+  															daliAddressingDebug(0x44,_dASRAEncontradosCnt,_dASRAHalladoSearchH,_dASRAHalladoSearchM,_dASRAHalladoSearchL);
+..\dASRA.c(531): warning:  #223-D: function "daliAddressingDebug" declared implicitly
+                        daliAddressingDebug(0x55,0xFF,0xFF,0xFF,0xFF);
+..\dASRA.c: 6 warnings, 0 errors
+compiling actualLevel.c...
+..\actualLevel.c(242): warning:  #223-D: function "daliLoopActualLevelSet" declared implicitly
+  			daliLoopActualLevelSet(((dest&0x7E)>>1), levelToStore);
+..\actualLevel.c(243): warning:  #223-D: function "daliLoopActualLevelDiscard" declared implicitly
+  			daliLoopActualLevelDiscard(3);
+..\actualLevel.c(252): warning:  #223-D: function "daliLoopActualLevelSet" declared implicitly
+  						daliLoopActualLevelSet(n, levelToStore);
+..\actualLevel.c(256): warning:  #223-D: function "daliLoopActualLevelDiscard" declared implicitly
+  										daliLoopActualLevelDiscard(3);
+..\actualLevel.c(262): warning:  #223-D: function "daliLoopActualLevelSet" declared implicitly
+  				daliLoopActualLevelSet(n, levelToStore);
+..\actualLevel.c(265): warning:  #223-D: function "daliLoopActualLevelDiscard" declared implicitly
+  daliLoopActualLevelDiscard(3);			
+..\actualLevel.c(272): warning:  #223-D: function "sensoresCambioActualLevelNotificar" declared implicitly
+  		sensoresCambioActualLevelNotificar(&gruposAfectados[0]);			//Notificará los NS de los interfaces afectados.
+..\actualLevel.c: 7 warnings, 0 errors
+compiling sensorStoring.c...
+..\sensorStoring.c(176): warning:  #940-D: missing return statement at end of non-void function "sensorStoringSetSetpoint" 
+  }
+..\sensorStoring.c(158): warning:  #550-D: variable "answer"  was set but never used
+  	unsigned char answer;
+..\sensorStoring.c(215): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(228): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(244): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(256): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(269): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(283): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(301): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];
+..\sensorStoring.c(309): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];
+..\sensorStoring.c(318): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];
+..\sensorStoring.c(328): warning:  #177-D: variable "apply"  was declared but never referenced
+  	unsigned char apply[8];
+..\sensorStoring.c(340): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(361): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(382): warning:  #223-D: function "sysTickDelay" declared implicitly
+  		sysTickDelay (10);
+..\sensorStoring.c(467): warning:  #223-D: function "ethSendFrame" declared implicitly
+  			ethSendFrame(0,&ethFrame[0],6,&_sensorStoringIp[0], 2234);						
+..\sensorStoring.c(509): warning:  #223-D: function "ethSendFrame" declared implicitly
+  					ethSendFrame(0,&ethFrame[0],5,&_sensorStoringQuerySetpointIp[0], 2234);									
+..\sensorStoring.c: 17 warnings, 0 errors
+compiling historicoTest.c...
+..\utils.h(7): warning:  #1-D: last line of file ends without a newline
+  void uint32Pop(unsigned char *arrayIn, unsigned int *uint32Out, unsigned short int *arrayOutOffsetPtr);
+..\historicoTest.c(62): warning:  #223-D: function "utils_BitFromByteArraySet" declared implicitly
+  		utils_BitFromByteArraySet(&_historicoTest_FtDoneArray[0],address);
+..\historicoTest.c(67): warning:  #223-D: function "utils_BitFromByteArrayGet" declared implicitly
+  		if (utils_BitFromByteArrayGet(&_historicoTest_FtDoneArray[0],address)==0x01)
+..\historicoTest.c(70): warning:  #223-D: function "utils_BitFromByteArrayClear" declared implicitly
+  			utils_BitFromByteArrayClear(&_historicoTest_FtDoneArray[0],address);
+..\historicoTest.c(72): warning:  #223-D: function "utils_BitFromByteArrayClear" declared implicitly
+  		utils_BitFromByteArrayClear(&_historicoTest_FtDoneClearPendingArray[0],address);
+..\historicoTest.c(77): warning:  #223-D: function "utils_BitFromByteArraySet" declared implicitly
+  		utils_BitFromByteArraySet(&_historicoTest_DtDoneArray[0],address);
+..\historicoTest.c(82): warning:  #223-D: function "utils_BitFromByteArrayGet" declared implicitly
+  		if (utils_BitFromByteArrayGet(&_historicoTest_DtDoneArray[0],address)==0x01)
+..\historicoTest.c(85): warning:  #223-D: function "utils_BitFromByteArrayClear" declared implicitly
+  			utils_BitFromByteArrayClear(&_historicoTest_DtDoneArray[0],address);
+..\historicoTest.c(87): warning:  #223-D: function "utils_BitFromByteArrayClear" declared implicitly
+  		utils_BitFromByteArrayClear(&_historicoTest_DtDoneClearPendingArray[0],address);
+..\historicoTest.c(110): warning:  #1-D: last line of file ends without a newline
+  }
+..\historicoTest.c: 10 warnings, 0 errors
+compiling debug.c...
+compiling iED.c...
+..\iED.h(29): warning:  #1-D: last line of file ends without a newline
+  void iD2DoTask(void);
+..\iED.c: 1 warning, 0 errors
+compiling sensoresGruposPulsadoresTW.c...
+..\mainCfg.h(24): warning:  #1-D: last line of file ends without a newline
+  #endif
+..\sensoresGrupos\sensoresGruposPulsadoresTW.c(31): warning:  #223-D: function "circGruposInhibidosSet" declared implicitly
+  				circGruposInhibidosSet(numeroGrupo, 1);				
+..\sensoresGrupos\sensoresGruposPulsadoresTW.c: 2 warnings, 0 errors
+compiling normaLink62386P209.c...
+..\normaLink62386P209.c(123): warning:  #223-D: function "daliSensoresTcStepUpEnviar" declared implicitly
+  		daliSensoresTcStepUpEnviar (3);
+..\normaLink62386P209.c(129): warning:  #223-D: function "daliSensoresTcStepDownEnviar" declared implicitly
+  		daliSensoresTcStepDownEnviar (4);
+..\normaLink62386P209.c: 2 warnings, 0 errors
+compiling stm32f0xx_misc.c...
+compiling stm32f0xx_rcc.c...
+compiling stm32f0xx_gpio.c...
+compiling stm32f0xx_syscfg.c...
+compiling stm32f0xx_exti.c...
+assembling startup_stm32f0xx.s...
+compiling stm32f0xx_spi.c...
+compiling stm32f0xx_iwdg.c...
+compiling stm32f0xx_i2c.c...
+compiling stm32f0xx_pwr.c...
+compiling stm32f0xx_rtc.c...
+linking...
+Program Size: Code=60280 RO-data=936 RW-data=644 ZI-data=7380  
+FromELF: creating hex file...
+".\IO_Toggle\IO_Toggle.axf" - 0 Error(s), 457 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                https://www.keil.com/pack/Keil.STM32F0xx_DFP.2.1.1.pack
+                Keil::STM32F0xx_DFP@2.1.1
+                STMicroelectronics STM32F0 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_IO_Toggle
+  C:/Users/i.garcia/AppData/Local/Arm/Packs/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  C:/Users/i.garcia/AppData/Local/Arm/Packs/Keil/STM32F0xx_DFP/2.1.1/Drivers/CMSIS/Device/ST/STM32F0xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+Build Time Elapsed:  00:00:04
+</pre>
+</body>
+</html>

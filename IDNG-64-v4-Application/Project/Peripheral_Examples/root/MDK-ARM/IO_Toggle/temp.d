@@ -1,0 +1,12 @@
+.\io_toggle\temp.o: ..\temp.c
+.\io_toggle\temp.o: ..\temp.h
+.\io_toggle\temp.o: ..\config.h
+.\io_toggle\temp.o: C:\Keil_v5\ARM\5.06\Bin\..\include\string.h
+.\io_toggle\temp.o: ..\m25p.h
+.\io_toggle\temp.o: ..\dataTypes.h
+.\io_toggle\temp.o: ..\dali.h
+.\io_toggle\temp.o: ..\daliLoop.h
+.\io_toggle\temp.o: ..\macros.h
+.\io_toggle\temp.o: ..\rtcc.h
+.\io_toggle\temp.o: ..\m25p.h
+.\io_toggle\temp.o: ..\mainCfg.h

@@ -1,0 +1,11 @@
+.\io_toggle\test.o: ..\test.c
+.\io_toggle\test.o: ..\daliCommands.h
+.\io_toggle\test.o: ..\dali.h
+.\io_toggle\test.o: ..\daliLoop.h
+.\io_toggle\test.o: ..\rtcc.h
+.\io_toggle\test.o: ..\m25p.h
+.\io_toggle\test.o: ..\test.h
+.\io_toggle\test.o: ..\config.h
+.\io_toggle\test.o: C:\Keil_v5\ARM\5.06\Bin\..\include\string.h
+.\io_toggle\test.o: ..\m25p.h
+.\io_toggle\test.o: ..\dataTypes.h

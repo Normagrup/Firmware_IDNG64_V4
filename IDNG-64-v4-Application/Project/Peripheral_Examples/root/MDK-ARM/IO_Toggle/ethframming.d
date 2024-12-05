@@ -1,0 +1,11 @@
+.\io_toggle\ethframming.o: ..\ethFramming.c
+.\io_toggle\ethframming.o: ..\normaLink62386P102.h
+.\io_toggle\ethframming.o: ..\normaLink62386P202.h
+.\io_toggle\ethframming.o: ..\normaLinkCfgInfoPasarela.h
+.\io_toggle\ethframming.o: ..\normaLinkSingleLoop.h
+.\io_toggle\ethframming.o: ..\normaLinkCmdPasarela.h
+.\io_toggle\ethframming.o: ..\normaLinkDaliUtils.h
+.\io_toggle\ethframming.o: ..\normalink.h
+.\io_toggle\ethframming.o: ..\w5100/socket.h
+.\io_toggle\ethframming.o: ..\w5100/w5100.h
+.\io_toggle\ethframming.o: ..\mainCfg.h

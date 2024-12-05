@@ -1,0 +1,9 @@
+.\io_toggle\daliaddressing.o: ..\daliAddressing.c
+.\io_toggle\daliaddressing.o: ..\daliCommands.h
+.\io_toggle\daliaddressing.o: ..\dali.h
+.\io_toggle\daliaddressing.o: ..\daliLoop.h
+.\io_toggle\daliaddressing.o: ..\config.h
+.\io_toggle\daliaddressing.o: C:\Keil_v5\ARM\5.06\Bin\..\include\string.h
+.\io_toggle\daliaddressing.o: ..\m25p.h
+.\io_toggle\daliaddressing.o: ..\dataTypes.h
+.\io_toggle\daliaddressing.o: ..\qSN.h

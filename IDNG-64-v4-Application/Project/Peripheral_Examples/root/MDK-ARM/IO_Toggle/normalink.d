@@ -1,0 +1,11 @@
+.\io_toggle\normalink.o: ..\normalink.c
+.\io_toggle\normalink.o: ..\config.h
+.\io_toggle\normalink.o: C:\Keil_v5\ARM\5.06\Bin\..\include\string.h
+.\io_toggle\normalink.o: ..\m25p.h
+.\io_toggle\normalink.o: ..\dataTypes.h
+.\io_toggle\normalink.o: ..\rtcc.h
+.\io_toggle\normalink.o: ..\w5100/socket.h
+.\io_toggle\normalink.o: ..\w5100/w5100.h
+.\io_toggle\normalink.o: ..\normalink.h
+.\io_toggle\normalink.o: ..\dali.h
+.\io_toggle\normalink.o: ..\mainCfg.h
