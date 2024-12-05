@@ -3,5 +3,6 @@
 
 # No ignorar archivos con extensión .uvprojx dentro de MDK-ARM
 !/IDNG-64-v4-Application/Project/Peripheral_Examples/root/MDK-ARM/**/*.uvprojx
+!/IDNG-64-v4-Application/Project/Peripheral_Examples/root/MDK-ARM/**/RTE/
 
 /IDNG-64-v4-Application/Project/Peripheral_Examples/root/MDK-ARM
